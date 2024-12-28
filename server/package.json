@@ -1,0 +1,19 @@
+{
+  "name": "graphql-apollo-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Rushiraj Herma(20011942)",
+  "license": "MIT",
+  "dependencies": {
+    "@apollo/datasource-rest": "^6.2.2",
+    "@apollo/server": "^4.9.5",
+    "blueimp-md5": "^2.19.0",
+    "graphql": "^16.8.1",
+    "redis": "^4.6.11"
+  }
+}
