@@ -4,7 +4,7 @@ import {NavLink, Route, Routes} from 'react-router-dom';
 import { AppBar, Toolbar, Typography, Button } from '@mui/material';
 import Home from './Home';
 import Comics from './Comics';
-import Comic from './comic.jsx';
+import Comic from './Comic';
 import Collection from './Collections';
 import Error_404 from './Error_404';
 import Error_400 from './Error_400'
