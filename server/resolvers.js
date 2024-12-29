@@ -2,9 +2,13 @@ import { GraphQLError } from 'graphql';
 import { RESTDataSource } from '@apollo/datasource-rest';
 import md5 from 'blueimp-md5';
 import { client } from './server.js';
+import dotenv from 'dotenv';
+dotenv.config();
 
-const publickey = import.meta.env.VITE_PUBLIC_KEY;
-const privatekey = import.meta.env.VITE_PRIVATE_KEY;
+const publickey = process.env.PUBLIC_KEY;
+const privatekey = process.env.PRIVATE_KEY;  
+// const publickey = import.meta.env.VITE_PUBLIC_KEY;
+// const privatekey = import.meta.env.VITE_PRIVATE_KEY;
 export class ComicAPI extends RESTDataSource {
 
   async getComic(pagenum) {
